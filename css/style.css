@@ -32,6 +32,7 @@ body {
 .top-container {
     display: flex;
     flex-grow: 1;
+    overflow: auto;
 }
 
 .bottom-container {
@@ -53,7 +54,7 @@ body {
     border: 2px solid;
     position: absolute;
     right: 0;
-    margin-right: 5px;
+    margin-right: 25px;
 }
 
 .side-bar {
@@ -62,11 +63,13 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
+    overflow: auto;
 }
 
 .main-container {
 flex-grow: 1;
 background-color: var(--second_color);
+overflow: auto;
 }
 
 .side-top {
@@ -106,7 +109,11 @@ background-color: var(--second_color);
     display: inline-block;
 }
 
-.icons-container .home-icon,
+.icons-container .home-icon {
+    font-size: 1.5rem;
+    padding-right: 0;
+}
+
 .search .li-icon,
 .library .li-icon {
     font-size: 1.5rem;
@@ -119,10 +126,7 @@ background-color: var(--second_color);
     justify-content: center;
 }
 
-.side-top .side-list a {
-    padding: 5px;
-    margin: 6px;
-}
+
 .playlist-container {
     display: none;
 }
@@ -219,12 +223,12 @@ height: auto;
 .bottom-center-buttons a {
     color: white;
     text-decoration: none;
-    margin: 15px;
-    font-size: 30px;
+    margin: 1.2rem;
+    font-size: 16px;
 }
 
 .bottom-center {
-    flex-grow: 1;
+
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -237,7 +241,7 @@ height: auto;
 
 .centerbar-progress-bg {
     height: 7px;
-    width: 565px;
+    min-width: 130px;
     color: white;
     border-radius: 25px;
     background-color: gray;
@@ -248,7 +252,7 @@ height: auto;
 
 .centerbar-progress {
     height: 7px;
-    width: 185px;
+    width: 31%;
     border-radius: 25px;
     background-color: white;
     justify-content: center;

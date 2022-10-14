@@ -30,7 +30,34 @@
         justify-content: flex-start;
     }
 
+    .bottom-center {
+        flex-grow: 1;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
         
+}
+
+@media screen and (min-width: 668px) {
+    .centerbar-progress-bg {
+        height: 7px;
+        min-width: 250px;
+        color: white;
+        border-radius: 25px;
+        background-color: gray;
+        justify-content: center;
+        position: relative;
+        margin: 0 15px;
+    }
+
+    .bottom-center-buttons a {
+        color: white;
+        text-decoration: none;
+        margin: 1.2rem;
+        font-size: 22px;
+    }
 }
 
 /* medium */
