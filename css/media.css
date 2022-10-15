@@ -23,11 +23,38 @@
         color: var(--third_color);
         text-decoration: none;
     }
- 
+
+
+    .li-text:hover  {
+        display: block;
+        margin-left: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .li-icon:hover {
+        color: white;
+        text-decoration: none;
+    }
     .side-list a {
         display: flex;
         padding: 1rem;
         justify-content: flex-start;
+    }
+
+    .side-list .icons-container .home-text {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        display: block;
+    }
+
+    .space {
+        width: 170px;
+        background-color: gray;
+        height: 1px;
+        margin-left: 15px;
+        display: block;
     }
 
     .bottom-center {
@@ -37,13 +64,52 @@
         align-items: center;
     }
 
-        
-}
+    .jd-text {
+        font-size: 21px;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 5px;
+        display: block;
+    }
+
+    .main-top button:hover {
+        border-radius: 25px;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid;
+        position: absolute;
+        right: 0;
+        margin-right: 25px;
+        font-size: 14px;
+    }
+
+    .main-middle a:hover {
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+        padding: 1rem;
+        display: flex;
+    }
+
+    .card:hover .play-bg {
+        font-size: 4rem;
+        position: absolute;
+        top: 25%;
+        right: 31%;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+
 
 @media screen and (min-width: 668px) {
     .centerbar-progress-bg {
         height: 7px;
-        min-width: 250px;
+        min-width: 150px;
         color: white;
         border-radius: 25px;
         background-color: gray;
@@ -55,8 +121,49 @@
     .bottom-center-buttons a {
         color: white;
         text-decoration: none;
-        margin: 1.2rem;
+        margin: 0.6rem;
         font-size: 22px;
+    }
+
+    .bottom-right a {
+        color: white;
+        text-decoration: none;
+        margin: 0.6rem;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .rightbar-progress-bg {
+        height: 7px;
+        min-width: 128px;
+        color: white;
+        border-radius: 25px;
+        background-color: gray;
+        justify-content: center;
+        position: relative;
+        margin: 0 15px;
+    }
+    
+    .rightbar-progress {
+        height: 7px;
+        width: 38px;
+        border-radius: 25px;
+        background-color: white;
+        justify-content: center;
+        position: absolute;
+        right: 90px;
+    }
+
+    .circle-center {
+        position: absolute;
+        top: -5px;
+        right: 90px;
+    }
+    
+    .circle-right {
+        position: absolute;
+        top: -5px;
+        left: 35px;
     }
 }
 
@@ -66,7 +173,22 @@
         flex-basis: calc(100%  / 4);
     }
 
+    .centerbar-progress-bg {
+        height: 7px;
+        min-width: 250px;
+        color: white;
+        border-radius: 25px;
+        background-color: gray;
+        justify-content: center;
+        position: relative;
+        margin: 0 15px;
+    }
 
+    .circle-center {
+        position: absolute;
+        top: -5px;
+        left: 76px;
+    }
 }
 
 

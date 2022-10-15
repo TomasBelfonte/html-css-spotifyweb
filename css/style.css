@@ -13,6 +13,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .logo-small {
     display: block;
     padding: 12px;
@@ -85,8 +86,20 @@ overflow: auto;
     list-style: none;
 }
 
+.plus .li-icon {
+    font-size: 40px;
+}
+
+.plus .li-text {
+    padding-top: 14px;
+}
+
 .li-text {
     display: none;
+}
+
+.li-text a {
+    text-decoration: none;
 }
 
 .li-icon  {
@@ -100,14 +113,40 @@ overflow: auto;
     
 }
 
-.home-icon,
-.home-text,
-.jd-text a,
-.jd-icon a {
+.home-icon {
     text-decoration: none;
     color: white;
     display: inline-block;
 }
+
+.side-list .icons-container .home-text {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    display: none;
+}
+
+.jd-icon {
+    font-size: 25px;
+}
+
+
+.jd-text {
+    font-size: 21px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    display: none;
+}
+
+.space {
+    width: 170px;
+    background-color: gray;
+    height: 1px;
+    margin-left: 15px;
+    display: none;
+}
+
 
 .icons-container .home-icon {
     font-size: 1.5rem;
@@ -135,11 +174,18 @@ overflow: auto;
     flex-shrink: 0;
 }
 
+.side-bottom a{
+    text-decoration: none;
+    color: white;
+
+}
+
 .main-middle {
     background-color: var(--second_color);
     display: flex;
     justify-content: center;
 }
+
 
 .main-middle-list {
     display: flex;
@@ -175,6 +221,19 @@ overflow: auto;
 .card {
     padding: 0.4rem;
     flex-wrap: wrap;
+    position: relative;
+}
+
+.play-bg {
+    font-size: 4rem;
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    opacity: 0;
+}
+
+.card-img {
+    position: relative;
 }
 
 .card-img img{
@@ -205,6 +264,7 @@ overflow: auto;
 width: auto;
 color: white;
 height: auto;
+padding: 20px 0;
 
 }
 
@@ -223,7 +283,7 @@ height: auto;
 .bottom-center-buttons a {
     color: white;
     text-decoration: none;
-    margin: 1.2rem;
+    margin: 0.3rem;
     font-size: 16px;
 }
 
@@ -237,6 +297,33 @@ height: auto;
 .bottom-left,
 .bottom-right {
     flex-shrink: 0;
+}
+.bottom-left-text {
+    margin-right: 10px;
+}
+
+.bottom-left-text h3{
+    color: white;
+}
+
+.bottom-left-text h5{
+    color: gray;
+}
+
+.bottom-left-text:hover {
+    color: white;
+}
+
+.bottom-left-icons a {
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+}
+
+.bottom-left-icons a:hover {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
 }
 
 .centerbar-progress-bg {
@@ -259,3 +346,65 @@ height: auto;
     position: absolute;
     left: 0;
 }
+
+.centerbar-progress:hover {
+    background-color: green;
+    opacity: 1;
+}
+
+.centerbar-progress:hover .circle-center {
+    opacity: 1;
+}
+.bottom-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0.3rem;
+    font-size: 16px;
+    position: relative;
+}
+
+.rightbar-progress-bg {
+    height: 7px;
+    min-width: 60px;
+    color: white;
+    border-radius: 25px;
+    background-color: gray;
+    justify-content: center;
+    position: relative;
+    margin: 0 15px;
+}
+
+.rightbar-progress {
+    height: 7px;
+    width: 20px;
+    border-radius: 25px;
+    background-color: white;
+    justify-content: center;
+    position: absolute;
+    right: 41px;
+}
+
+.rightbar-progress:hover {
+    background-color: green;
+}
+
+.rightbar-progress:hover .circle-right {
+    opacity: 1;
+}
+
+.circle-center {
+    position: absolute;
+    top: -5px;
+    left: 35px;
+    opacity: 0;
+}
+
+.circle-right {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    opacity: 0;
+}
+
+
+
